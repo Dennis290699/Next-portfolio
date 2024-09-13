@@ -7,7 +7,6 @@ import { DownloadIcon, Send, Sparkles } from "lucide-react"
 import DentistProfile from "@/assets/images/profile/profile_HD.png"
 import LogoUniversidad from "@/assets/icons/UCE.png"
 import LogoFacultad from "@/assets/icons/Odontologia.png"
-import LogoBrodents from "@/assets/icons/Brodents.png"
 
 export default function Home() {
   const controls = useAnimation()
