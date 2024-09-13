@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "titulo": "Endodoncia en Segundo Molar Superior",
+    "descripcion": "Paciente de 35 años con dolor agudo en el segundo molar superior derecho. Diagnóstico de pulpitis irreversible con periodontitis apical sintomática.",
+    "procedimiento": [
+      "Anestesia local con lidocaína al 2% con epinefrina.",
+      "Aislamiento del diente con dique de goma.",
+      "Apertura cameral y localización de conductos radiculares.",
+      "Determinación de longitud de trabajo mediante localizador de ápice y radiografía.",
+      "Instrumentación de conductos con sistema rotatorio ProTaper Next.",
+      "Irrigación con hipoclorito de sodio al 5.25% y EDTA al 17%.",
+      "Obturación con gutapercha y cemento AH Plus.",
+      "Restauración definitiva con resina compuesta."
+    ],
+    "resultados": "Alivio inmediato del dolor, seguimiento exitoso con radiografía de control adecuada.",
+    "conclusiones": "La tecnología moderna y una técnica precisa son clave para el éxito en endodoncia.",
+    "detalles": {
+      "fecha": "15 de Mayo, 2023",
+      "paciente": "Anónimo, 35 años",
+      "tipo": "Endodoncia"
+    },
+    "galeria": ["/img/caso1_1.png", "/img/caso1_2.png", "/img/caso1_3.png"]
+  },
+  {
+    "id": 2,
+    "titulo": "Extracción de Tercer Molar Impactado",
+    "descripcion": "Paciente de 28 años con tercer molar inferior izquierdo impactado. Se presentó inflamación y dolor moderado.",
+    "procedimiento": [
+      "Evaluación radiográfica para verificar la posición del molar.",
+      "Anestesia local y extracción quirúrgica del molar.",
+      "Sutura del área de extracción.",
+      "Prescripción de analgésicos y antibióticos."
+    ],
+    "resultados": "Extracción exitosa sin complicaciones. Seguimiento mostró una buena cicatrización.",
+    "conclusiones": "La planificación previa y las técnicas quirúrgicas precisas son esenciales en las extracciones complejas.",
+    "detalles": {
+      "fecha": "20 de Abril, 2023",
+      "paciente": "Anónimo, 28 años",
+      "tipo": "Cirugía Oral"
+    },
+    "galeria": ["/img/caso2_1.png", "/img/caso2_2.png", "/img/caso2_3.png"]
+  },
+  {
+    "id": 3,
+    "titulo": "Restauración Estética en Incisivo Central",
+    "descripcion": "Paciente de 22 años con fractura en el incisivo central superior derecho debido a un trauma deportivo.",
+    "procedimiento": [
+      "Anestesia local y preparación de la cavidad.",
+      "Restauración con resina compuesta de alta estética.",
+      "Pulido final para obtener una superficie lisa y brillante."
+    ],
+    "resultados": "Restauración con excelente integración estética y funcionalidad recuperada.",
+    "conclusiones": "La selección adecuada de materiales y técnicas de adhesión es crucial para lograr un resultado estético óptimo.",
+    "detalles": {
+      "fecha": "10 de Marzo, 2023",
+      "paciente": "Anónimo, 22 años",
+      "tipo": "Estética Dental"
+    },
+    "galeria": ["/img/caso3_1.png", "/img/caso3_2.png", "/img/caso3_3.png"]
+  },
+  {
+    "id": 4,
+    "titulo": "Colocación de Implante en Primer Premolar",
+    "descripcion": "Paciente de 45 años con ausencia del primer premolar superior derecho. Se decidió por la colocación de un implante dental.",
+    "procedimiento": [
+      "Evaluación del volumen óseo mediante tomografía.",
+      "Colocación del implante con guía quirúrgica.",
+      "Cicatrización y seguimiento durante 3 meses antes de la colocación de la corona."
+    ],
+    "resultados": "Implante osteointegrado con éxito y rehabilitación protésica adecuada.",
+    "conclusiones": "La planificación digital y la técnica mínimamente invasiva permiten resultados predecibles en implantología.",
+    "detalles": {
+      "fecha": "5 de Febrero, 2023",
+      "paciente": "Anónimo, 45 años",
+      "tipo": "Implantes Dentales"
+    },
+    "galeria": ["/img/caso4_1.png", "/img/caso4_2.png", "/img/caso4_3.png"]
+  },
+  {
+    "id": 5,
+    "titulo": "Tratamiento Periodontal en Paciente con Gingivitis Crónica",
+    "descripcion": "Paciente de 50 años con inflamación gingival generalizada y sangrado espontáneo.",
+    "procedimiento": [
+      "Toma de radiografías y evaluación periodontal.",
+      "Raspado y alisado radicular en todas las áreas afectadas.",
+      "Instrucción al paciente en técnicas adecuadas de higiene oral."
+    ],
+    "resultados": "Disminución significativa de la inflamación y el sangrado en el seguimiento de 6 semanas.",
+    "conclusiones": "La intervención temprana y la educación del paciente son clave en el manejo exitoso de la gingivitis crónica.",
+    "detalles": {
+      "fecha": "1 de Enero, 2023",
+      "paciente": "Anónimo, 50 años",
+      "tipo": "Periodoncia"
+    },
+    "galeria": ["/img/caso5_1.png", "/img/caso5_2.png", "/img/caso5_3.png"]
+  },
+  {
+    "id": 6,
+    "titulo": "Blanqueamiento Dental en Paciente con Manchas Extrínsecas",
+    "descripcion": "Paciente de 30 años que busca mejorar la apariencia de sus dientes afectados por manchas de café y tabaco.",
+    "procedimiento": [
+      "Profilaxis dental para remover manchas superficiales.",
+      "Aplicación de gel blanqueador a base de peróxido de hidrógeno al 35%.",
+      "Activación del gel mediante luz LED durante 15 minutos."
+    ],
+    "resultados": "Mejora significativa en la tonalidad de los dientes, con un blanqueamiento uniforme.",
+    "conclusiones": "El blanqueamiento dental es un procedimiento seguro y efectivo para mejorar la estética dental.",
+    "detalles": {
+      "fecha": "25 de Diciembre, 2022",
+      "paciente": "Anónimo, 30 años",
+      "tipo": "Estética Dental"
+    },
+    "galeria": ["/img/caso6_1.png", "/img/caso6_2.png", "/img/caso6_3.png"]
+  }
+]
