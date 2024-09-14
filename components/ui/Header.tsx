@@ -91,7 +91,7 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            {menuItems.map((item, index) => (
+            {menuItems.map((item) => (
               <motion.li key={item.name} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
                 <a
                   href={item.href}
