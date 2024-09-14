@@ -1,24 +1,26 @@
 "use client";
 
-import { useState } from 'react'
-import { motion } from 'framer-motion'
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { UserIcon, GraduationCapIcon, AwardIcon, BookOpenIcon } from "lucide-react"
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { UserIcon, GraduationCapIcon, AwardIcon, BookOpenIcon } from "lucide-react";
+
+type Tab = "personal" | "professional" | "education" | "awards";
 
 export default function AboutMe() {
-  const [activeTab, setActiveTab] = useState('personal')
+  const [activeTab, setActiveTab] = useState<Tab>("personal");
 
   const tabs = [
-    { id: 'personal', icon: UserIcon, title: 'Personal' },
-    { id: 'professional', icon: GraduationCapIcon, title: 'Profesional' },
-    { id: 'education', icon: BookOpenIcon, title: 'Educación' },
-    { id: 'awards', icon: AwardIcon, title: 'Reconocimientos' }
-  ]
+    { id: "personal", icon: UserIcon, title: "Personal" },
+    { id: "professional", icon: GraduationCapIcon, title: "Profesional" },
+    { id: "education", icon: BookOpenIcon, title: "Educación" },
+    { id: "awards", icon: AwardIcon, title: "Reconocimientos" },
+  ];
 
-  const content = {
+  const content: Record<Tab, { title: string; content: JSX.Element }> = {
     personal: {
-      title: 'Información Personal',
+      title: "Información Personal",
       content: (
         <>
           <p className="text-gray-600 mb-4">
@@ -34,10 +36,10 @@ export default function AboutMe() {
             </div>
           </div>
         </>
-      )
+      ),
     },
     professional: {
-      title: 'Experiencia Profesional',
+      title: "Experiencia Profesional",
       content: (
         <div className="space-y-4">
           <div>
@@ -57,10 +59,10 @@ export default function AboutMe() {
             </ul>
           </div>
         </div>
-      )
+      ),
     },
     education: {
-      title: 'Educación y Formación',
+      title: "Educación y Formación",
       content: (
         <div className="space-y-4">
           <div>
@@ -76,10 +78,10 @@ export default function AboutMe() {
             </ul>
           </div>
         </div>
-      )
+      ),
     },
     awards: {
-      title: 'Reconocimientos Académicos',
+      title: "Reconocimientos Académicos",
       content: (
         <ul className="space-y-4">
           <li>
@@ -95,9 +97,9 @@ export default function AboutMe() {
             <p className="text-sm text-gray-500">Fundación para el Avance de la Odontología, 2020</p>
           </li>
         </ul>
-      )
-    }
-  }
+      ),
+    },
+  };
 
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-white to-blue-50">
@@ -109,11 +111,11 @@ export default function AboutMe() {
               {tabs.map((tab) => (
                 <button
                   key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
+                  onClick={() => setActiveTab(tab.id as Tab)}
                   className={`w-full text-left px-4 py-3 rounded-lg transition-all duration-300 flex items-center space-x-3 ${
                     activeTab === tab.id
-                      ? 'bg-blue-600 text-white shadow-lg'
-                      : 'bg-white text-gray-600 hover:bg-gray-100'
+                      ? "bg-blue-600 text-white shadow-lg"
+                      : "bg-white text-gray-600 hover:bg-gray-100"
                   }`}
                 >
                   <tab.icon className="w-5 h-5" />
@@ -133,14 +135,12 @@ export default function AboutMe() {
                 <CardHeader className="bg-gradient-to-r from-blue-500 to-blue-600 text-white">
                   <CardTitle>{content[activeTab].title}</CardTitle>
                 </CardHeader>
-                <CardContent className="p-6">
-                  {content[activeTab].content}
-                </CardContent>
+                <CardContent className="p-6">{content[activeTab].content}</CardContent>
               </Card>
             </motion.div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
