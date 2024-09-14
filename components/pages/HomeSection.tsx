@@ -1,25 +1,26 @@
 "use client";
 
-import { useEffect, useRef } from 'react'
-import { motion, useAnimation, useInView } from 'framer-motion'
-import { Button } from "@/components/ui/button"
-import { DownloadIcon, Send, Sparkles } from "lucide-react"
-import DentistProfile from "@/assets/images/profile/profile_HD.png"
-import LogoUniversidad from "@/assets/icons/UCE.png"
-import LogoFacultad from "@/assets/icons/Odontologia.png"
+import { useEffect, useRef } from 'react';
+import { motion, useAnimation, useInView, Variants } from 'framer-motion';
+import { Button } from "@/components/ui/button";
+import { DownloadIcon, Send, Sparkles } from "lucide-react";
+import DentistProfile from "@/assets/images/profile/profile_HD.png";
+import LogoUniversidad from "@/assets/icons/UCE.png";
+import LogoFacultad from "@/assets/icons/Odontologia.png";
 
 export default function Home() {
-  const controls = useAnimation()
-  const ref = useRef(null)
-  const inView = useInView(ref)
+  const controls = useAnimation();
+  const ref = useRef(null);
+  const inView = useInView(ref);
 
   useEffect(() => {
     if (inView) {
-      controls.start("visible")
+      controls.start("visible");
     }
-  }, [controls, inView])
+  }, [controls, inView]);
 
-  const particlesVariants = {
+  // Tipar las variantes usando el tipo Variants de Framer Motion
+  const particlesVariants: Variants = {
     hidden: { opacity: 0 },
     visible: { 
       opacity: 1,
@@ -28,9 +29,9 @@ export default function Home() {
         delayChildren: 0.3,
       }
     }
-  }
+  };
 
-  const particleVariants = {
+  const particleVariants: Variants = {
     hidden: { 
       opacity: 0,
       y: 20,
@@ -43,10 +44,10 @@ export default function Home() {
       transition: {
         duration: 2,
         repeat: Infinity,
-        repeatType: "loop"
+        repeatType: "loop" as const, // Asegurar que "loop" es un literal
       }
     }
-  }
+  };
 
   return (
     <section ref={ref} className="relative min-h-screen overflow-hidden bg-gradient-to-br from-blue-100 via-white to-blue-50 py-20 md:py-0 flex items-center">
@@ -148,7 +149,7 @@ export default function Home() {
                 transition={{ 
                   duration: 20,
                   repeat: Infinity,
-                  repeatType: "reverse"
+                  repeatType: "reverse" as const
                 }}
               />
               <motion.img 
@@ -208,5 +209,5 @@ export default function Home() {
         transition={{ duration: 8, repeat: Infinity }}
       />
     </section>
-  )
+  );
 }
